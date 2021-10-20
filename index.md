@@ -12,23 +12,23 @@ Chad Smith | Technical Alliance Architect at Teradici | HP
 
 This guide shows you how to install Teradici PCoIP agent on a Nvidia powered Instance running in AWS. Also this guide is inended for customers that have Teradici annual subcription and are interested in transfering licensed seats to a AWS EC2 instance(s). There is an alternative option for a AWS marketplace hourly subscription with pre-packaged AMI for [Windows 2019](https://aws.amazon.com/marketplace/pp/prodview-boeg6hiewus3o?sr=0-1&ref_=beagle&applicationId=AWSMPContessa) and [CentOS 7](https://aws.amazon.com/marketplace/pp/prodview-yjdn554yaqvem?sr=0-2&ref_=beagle&applicationId=AWSMPContessa). AWS marketplace offering is NOT apart of this deployment guide. 
 
-EC2 Mac instances are available for purchase as Dedicated Hosts through On Demand and Savings Plans pricing models. Billing for EC2 Mac instances is per second with a 24-hour minimum allocation period to comply with the Apple macOS Software License Agreement. Through On Demand, you can launch an EC2 Mac host and be up and running within minutes. At the end of the 24-hour minimum allocation period, the host can be released at any time without further commitment. 
+EC2 instances are available for purchase through On Demand and Savings Plans pricing models. Billing for EC2 Mac instances is per second with a 1hr-hour minimum allocation period to comply with the Mircosft Software License Agreement for windows instances. You can launch an EC2 Instanes and be up and running within minutes. At the end of the 1-hour minimum allocation period, the host can be released at any time without further commitment. 
 
-More Information on EC2 MAC Instance can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html).
+More Information on EC2 Instance can be found [here](https://aws.amazon.com/ec2/pricing/on-demand/).
 
 ## Objectives
 
-+ Allocate a AWS EC2 Mac Instance from AWS Console.
-+ Configure Security Groups to allows access to instance (SSH,VNC & PCoIP ports).
-+ Install supporting software and configure security parameters within Mac OS.
-+ Connect to EC2 Mac Instance via PCoIP client
++ Allocate a AWS EC2 Nvidia powered Instance from AWS Console.
++ Drop in deployment script based on Instance OS
++ Configure Security Groups to allows access to instance (SSH,RDP & PCoIP ports).
++ Connect to EC2 Instance via PCoIP client
 
 ## Costs
 
 This tutorial uses billable components of AWS Cloud and assumes Teradici subscription, including the following:
 
 +   [Teradici PCoIP](https://connect.teradici.com/contact-us), Teradici PCoIP subscriptions
-+   [AWS EC2 Mac Instance](https://aws.amazon.com/ec2/instance-types/mac/), including vCPUs, memory, disk, and GPUs as a dedicated host.
++   [AWS Nvidia EC2 Instance](https://aws.amazon.com/nvidia/), including vCPUs, memory, disk, and GPUs
 +   [Internet egress and transfer costs](https://aws.amazon.com/blogs/architecture/overview-of-data-transfer-costs-for-common-architectures/), for PCoIP and other applications communications
 
 Use the [AWS pricing calculator](https://calculator.aws/#/) to generate a cost estimate based on your projected usage.
