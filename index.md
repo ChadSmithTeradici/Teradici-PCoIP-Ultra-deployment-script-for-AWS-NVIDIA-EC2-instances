@@ -63,9 +63,11 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
 
     ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment_script-for-AWS-NVIDIA-Instances/blob/main/images/AWS-G4dn-Fam.jpg)
 
-1. On the **Configure Instance Details** page, fill in **Networking/Subnet/Auto-Assign Public-IP** based on desired Network topology. Take remaining configuration details based your requirements, until you reach the **User data** field in the Advanced Details section.
+1. On the **Configure Instance Details** page, at a minimum fill in **Networking/Subnet/Auto-Assign Public-IP** based on desired Network topology. Take remaining configuration details based your requirements, until you reach the **User data** field in the Advanced Details section.
 
     ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment_script-for-AWS-NVIDIA-Instances/blob/main/images/User_Data_Field.jpg)
+ 
+ 1. Based on your EC2 Instance desired OS, you will need either a Windows Powershell script (or) Centos Bash script. 
  
 For the remaining configuration details, make any selections you prefer. Then, choose **Next: Add Storage**.
 
