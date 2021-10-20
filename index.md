@@ -1,6 +1,6 @@
 ---
 title: Install PCoIP Ultra via a script in AWS
-description: Steps to utilize a deployment script for Teradici PCoIP on AWS/Nvidia Instances (G3, G4dn, G5dn). This is outside of an AWS marketplace offering.
+description: Steps to utilize a deployment script for Teradici PCoIP on AWS/Nvidia instances (G3, G4dn, G5dn). This is outside of an AWS marketplace offering.
 author: chad-m-smith
 tags: Teradici, AWS, Nvidia, EC2
 date_published: 2021-10-20
@@ -10,18 +10,18 @@ Chad Smith | Technical Alliance Architect at Teradici | HP
 
 <p style="background-color:#CAFACA;"><i>Contributed by Teradici employees.</i></p>
 
-This guide shows you how to install Teradici PCoIP agent on a Nvidia powered Instance running in AWS. Also this guide is intended for customers that have Teradici annual subcription and are interested in transfering licensed seats to a AWS EC2 instance(s). There is an alternative option for a AWS marketplace hourly subscription with pre-packaged AMI for [Windows 2019](https://aws.amazon.com/marketplace/pp/prodview-boeg6hiewus3o?sr=0-1&ref_=beagle&applicationId=AWSMPContessa) and [CentOS 7](https://aws.amazon.com/marketplace/pp/prodview-yjdn554yaqvem?sr=0-2&ref_=beagle&applicationId=AWSMPContessa). AWS marketplace offering is NOT apart of this deployment guide. 
+This guide shows you how to install Teradici PCoIP agent on a Nvidia powered instance running in AWS. Also this guide is intended for customers that have Teradici annual subcription and are interested in transfering licensed seats to a AWS EC2 instance(s). There is an alternative option for a AWS marketplace hourly subscription with pre-packaged AMI for [Windows 2019](https://aws.amazon.com/marketplace/pp/prodview-boeg6hiewus3o?sr=0-1&ref_=beagle&applicationId=AWSMPContessa) and [CentOS 7](https://aws.amazon.com/marketplace/pp/prodview-yjdn554yaqvem?sr=0-2&ref_=beagle&applicationId=AWSMPContessa). AWS marketplace offering is NOT apart of this deployment guide. 
 
-EC2 instances are available for purchase through On Demand and Savings Plans pricing models. Billing for EC2 Mac instances is per second with a 1hr-hour minimum allocation period to comply with the Mircosft Software License Agreement for windows. You can launch an EC2 Instanes and be up and running within minutes. At the end of the 1-hour minimum allocation period, the host can be released at any time without further commitment. 
+EC2 instances are available for purchase through On Demand and Savings Plans pricing models. Billing for EC2 instances is per second with a 1hr-hour minimum allocation period to comply with the Mircosft Software License Agreement for windows. You can launch an EC2 instanes and be up and running within minutes. At the end of the 1-hour minimum allocation period, the host can be released at any time without further commitment. 
 
-More Information on EC2 Instance can be found [here](https://aws.amazon.com/ec2/pricing/on-demand/).
+More Information on EC2 instance can be found [here](https://aws.amazon.com/ec2/pricing/on-demand/).
 
 ## Objectives
 
-+ Allocate a AWS EC2 Nvidia powered Instance from AWS Console.
-+ Drop in deployment script based on Instance OS type
++ Allocate a AWS EC2 Nvidia powered instance from AWS Console.
++ Drop in deployment script based on OS type
 + Configure Security Groups to allows access to instance (SSH,RDP & PCoIP ports).
-+ Connect to EC2 Instance via PCoIP client
++ Connect to EC2 instance via PCoIP client
 
 ## Costs
 
@@ -125,9 +125,9 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
 1. Install the PCoIP client software per the OSs Administration Guides installation instructions.
 
-1. Locate the **IP address** or **FQDN** of the AWS EC2 Instance via the [EC2 Dashboard](https://console.aws.amazon.com/ec2)
+1. Locate the **IP address** or **FQDN** of the AWS EC2 instance via the [EC2 Dashboard](https://console.aws.amazon.com/ec2)
 
-1. Identify the Mac Instance within the list of **Running Instances** in the EC2 Dashboard, check the **box** near the instance name, if it was named.
+1. Identify the instance within the list of **Running Instances** in the EC2 Dashboard, check the **box** near the instance name, if it was named.
 
 1. Under the **Details** tab you will see **Public IPv4 Address** (or) **Private IPv4 Address** (or) **Private IPv4 DNS** (or) **Public IPv4 DNS**
 
@@ -153,7 +153,7 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
 To avoid incurring charges to your AWS account for the resources used in this tutorial, you can simply delete the instance:
 
-1.  In the [EC2 Dashboard](https://console.aws.amazon.com/ec2) , go to the EC2 Instance **Instance State** scroll to **Terminate**
+1.  In the [EC2 Dashboard](https://console.aws.amazon.com/ec2) , go to the EC2 instance **Instance State** scroll to **Terminate**
 1.  You can repurpose PCoIP floating seat, allow up to 24hrs for Teradici Cloud Licensing server to flush assoication to EC2 Instance.
 
 ## What's next
