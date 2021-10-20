@@ -158,9 +158,6 @@ To avoid incurring charges to your AWS account for the resources used in this tu
 
 ## What's next
 
-+   Configure and optimize for PCoIP Host OS type. For [Windows](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/windows/21.07/admin-guide/configuring/configuring/) and [Centos](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/linux/21.07/admin-guide/configuring/configuring/) Optimizations
++   Configure and optimize for PCoIP Host OS type. For [Windows](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/windows/21.07/admin-guide/configuring/configuring/) and [Centos](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/linux/21.07/admin-guide/configuring/configuring/) PCoIP optimizations.
 +   Learn more about [Teradici](https://www.teradici.com/) products and offerings.
-+   Learn more about [AWS EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk&ab_channel=AmazonWebService)
-
-
-
++   Learn more about [Nvidia powered AWS EC2 Instances](https://www.youtube.com/watch?v=9k5wge-hfl4&ab_channel=AmazonWebServices)
