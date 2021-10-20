@@ -76,6 +76,7 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
         Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
     
     + For **[CentOS 7]**  **Copy** all the contents of this script and **Paste** it into the **User data** field
+      You will need to enter your Teradici registration code into the script after it is pasted in the User data field. For CentOS that field is on line 6. Also there is an (optional)to create a user and password combination to establishment of PCoIP session on line 7.
 
         Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
  
