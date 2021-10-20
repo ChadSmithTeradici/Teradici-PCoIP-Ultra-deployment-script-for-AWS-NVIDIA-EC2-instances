@@ -69,7 +69,13 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
  
  1. Based on your EC2 Instance desired OS you will need either a Windows Powershell script (or) Centos Bash script. These scripts are maintained and updated quartly by Teradici and are avaible on the [Teradici GitHub repo](https://github.com/teradici)
  
-    For [Windows 2019] (works with other windows flavors) **Copy** all the contents to this script and **Paste** it into the **User data** field 
+    + For [Windows 2019] (works with other windows flavors) **Copy** all the contents to this script and **Paste** it into the **User data** field 
+    
+        Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
+    
+    + For [CentOS 7]  **Copy** all the contents to this script and **Paste** it into the **User data** field
+
+        Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
  
  
     For the remaining configuration details, make any selections you prefer. Then, choose **Next: Add Storage**.
