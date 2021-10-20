@@ -69,11 +69,11 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
  
  1. Based on your EC2 Instance desired OS you will need either a Windows Powershell script (or) Centos Bash script. These scripts are maintained and updated quartly by Teradici and are avaible on the [Teradici GitHub repo](https://github.com/teradici)
  
-    + For [Windows 2019] (works with other windows flavors) **Copy** all the contents to this script and **Paste** it into the **User data** field 
+    + For **[Windows 2019]** (works with other windows flavors) **Copy** all the contents to this script and **Paste** it into the **User data** field 
     
         Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
     
-    + For [CentOS 7]  **Copy** all the contents to this script and **Paste** it into the **User data** field
+    + For **[CentOS 7]**  **Copy** all the contents to this script and **Paste** it into the **User data** field
 
         Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
  
@@ -87,7 +87,7 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
 1. On the Configure Security Group page, make the following selections:
 
     + For **Assign a security group**, choose **Create a new security group**.
-    + For **Security group name**, type a descriptive name, such as *pcoip ssh into mac1.metal*.
+    + For **Security group name**, type a descriptive name, such as *pcoip ssh rdp*.
     + For **Description**, optionally add a description.
     + For **Type**, choose **SSH**
     + For **Source**, choose **My IP**
@@ -105,13 +105,9 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
     + For **Source**, choose **0.0.0.0/0**
     + Select **Add rule**
     + For **Type**, choose **Custom TCP Rule**
-    + For **Port Range** choose **5900**
+    + For **Port Range** choose **3389**
     + For **Source**, choose **My IP**
-    +  Select **Add rule**
-    + For **Type**, choose **Custom TCP Rule**
-    + For **Port Range** choose **5800**
-    + For **Source**, choose **My IP**
-
+    
     Then, choose **Review** and **Launch**.
 
 1. On the **Review page**, review your selections and verify that the **Host ID** matches the Dedicated Host you created earlier. Then, choose **Launch**.
