@@ -71,7 +71,7 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
  
     + For **[Windows 2019]** (works with other windows flavors) **Copy** all the contents of this script and **Paste** it into the **User data** field
     
-      You will need to enter your **Teradici registration code** into the script after it is pasted in the User data field. For Windows that Field is on line 6 Also there is an (optional)set local administrator password as well on line 7.
+      You will need to enter your **Teradici registration code** into the script after it is pasted in the User data field. For Windows that field is on line 6. Also there is an (optional)set local administrator password as well on line 7.
     
         Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
     
@@ -118,5 +118,36 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
 
 1. On the **Instances** page, wait for the **Status Check** column of your instance to show 2/2 checks passed before continuing.
 
-## Set up the connection to your EC2 Mac Instance
+## Install PCoIP Client and connect to EC2 Mac Instance
+In this section, you will establish a connection to your instance using PCoIP. You will need to install a PCoIP client on your client system that will be used to initiate the session to the EC2 Instance in AWS. Depending on your network topology, use will either connect to the local IP (or) ephemeral/elastic Public IP (or) Fully Qualified Domain Names (FQDN)
+
+1. [Download the client installer](https://docs.teradici.com/find/product/software-and-mobile-clients) based on your client OS. You don't need a login credentials to download client software and can have as many copys of various client OS as you need.
+
+1. Install the PCoIP client software per the OSs Administration Guides installation instructions.
+
+1. Locate the **IP address** or **FQDN** of the AWS EC2 Instance via the [EC2 Dashboard](https://console.aws.amazon.com/ec2)
+
+1. Identify the Mac Instance within the list of **Running Instances** in the EC2 Dashboard, check the **box** near the instance name, if it was named.
+
+1. Under the **Details** tab you will see **Public IPv4 Address** (or) **Private IPv4 Address** (or) **Private IPv4 DNS** (or) **Public IPv4 DNS**
+
+1. From the client system, start your PCoIP client per OS. Typically the PCoIP client will have a icon:
+
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-icon.jpg)
+
+1. When the PCoIP client starts, it will ask for a **Host Address or Code**. Enter in your **IP address or FQDN** previously identified in previous section. (optionally) enter a name to **Connection Name** field then **SAVE**, if you want to save connection.
+
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Client.jpg)
+    
+1. Next, you will get a Cannot verify your connection to IP warning. This error is becuase a 3rd party trusted certificate has not been install on the host. You can select the **Connect Insecurely** option.
+    
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Trusted.jpg)
+    
+1. Finally, enter in the OS login credentials: 
+    + For **Windows** it would be **Administrator**and the password defined in the deployment script (or) can be [retreived](https://aws.amazon.com/premiumsupport/knowledge-center/retrieve-windows-admin-password/) via EC2 console.
+    + For **Centos** it would be the created user/password pair defined in the deployment script (or) a [SSH session](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) and a user created via *adduser*
+
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Auth.jpg)
+
+
 
