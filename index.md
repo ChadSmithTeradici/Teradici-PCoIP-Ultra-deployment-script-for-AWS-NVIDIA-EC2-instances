@@ -61,6 +61,8 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
 
 1. On the **Choose Instance Type** page, keep the default selection of **G4dn Instance familiy types** and choose **Next: Configure Instance Details**.
 
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment_script-for-AWS-NVIDIA-Instances/blob/main/images/AWS-G4dn-Fam.jpg)
+
 1. On the **Configure Instance Details** page, for **Host**, choose the **Dedicated Host** you allocated earlier. For the remaining configuration details, make any selections you prefer. Then, choose **Next: Add Storage**.
 
 1. On the **Add Storage** page, choose the Size (GiB) cell and increase the volume based on your requirements. Then, choose **Next: Add Tags**.
