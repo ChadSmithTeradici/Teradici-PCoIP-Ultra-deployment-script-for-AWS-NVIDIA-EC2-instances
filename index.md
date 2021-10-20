@@ -154,7 +154,7 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 To avoid incurring charges to your AWS account for the resources used in this tutorial, you can simply delete the instance:
 
 1.  In the [EC2 Dashboard](https://console.aws.amazon.com/ec2) , go to the EC2 instance **Instance State** scroll to **Terminate**
-1.  You can repurpose PCoIP floating seat, allow up to 24hrs for Teradici Cloud Licensing server to flush assoication to EC2 Instance.
+1.  You can repurpose PCoIP floating seat, allow up to 24hrs for Teradici Cloud Licensing server to flush assoication to EC2 instance(s).
 
 ## What's next
 
