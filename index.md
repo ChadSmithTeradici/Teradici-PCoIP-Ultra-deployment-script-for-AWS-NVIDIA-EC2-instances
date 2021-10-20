@@ -149,5 +149,18 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Auth.jpg)
 
+## Clean up
+
+To avoid incurring charges to your AWS account for the resources used in this tutorial, you can simply delete the instance:
+
+1.  In the [EC2 Dashboard](https://console.aws.amazon.com/ec2) , go to the EC2 Instance **Instance State** scroll to **Terminate**
+1.  You can repurpose PCoIP floating seat, allow up to 24hrs for Teradici Cloud Licensing server to flush assoication to EC2 Instance.
+
+## What's next
+
++   Configure and optimize for PCoIP Host OS type. For [Windows](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/windows/21.07/admin-guide/configuring/configuring/) and [Centos](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/linux/21.07/admin-guide/configuring/configuring/) Optimizations
++   Learn more about [Teradici](https://www.teradici.com/) products and offerings.
++   Learn more about [AWS EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk&ab_channel=AmazonWebService)
+
 
 
