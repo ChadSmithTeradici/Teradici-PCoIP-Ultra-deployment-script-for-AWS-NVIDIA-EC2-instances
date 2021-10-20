@@ -71,7 +71,7 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
  
     + For **[Windows 2019]** (works with other windows flavors) **Copy** all the contents of this script and **Paste** it into the **User data** field
     
-      You will need to enter your Teradici registration code into the script, after it is initially pasted. For Windows that Field is at line number 6. Also there is an (optional) field to set the local administrator password as well.
+      You will need to enter your **Teradici registration code** into the script after it is pasted in the User data field. For Windows that Field is on line 6 Also there is an (optional)set local administrator password as well on line 7.
     
         Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
     
