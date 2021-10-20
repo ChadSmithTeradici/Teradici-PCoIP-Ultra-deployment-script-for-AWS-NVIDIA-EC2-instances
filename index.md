@@ -57,7 +57,7 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
 
 1.  Launch a G4dn instance, On the [EC2 Dashboard](https://console.aws.amazon.com/ec2), choose **Launch Instance**.
 
-1. On the **Choose AMI** page, select the **[Windows 2019 Base](https://aws.amazon.com/marketplace/pp/prodview-bd6o47htpbnoe?ref=cns_srchrow)** or **[Cent0S7](https://aws.amazon.com/marketplace/pp/prodview-qkzypm3vjr45g?ref=cns_srchrow)** AMI(s)
+1. On the **Choose AMI** page, select the [Windows 2019 Base](https://aws.amazon.com/marketplace/pp/prodview-bd6o47htpbnoe?ref=cns_srchrow) or [Cent0S7](https://aws.amazon.com/marketplace/pp/prodview-qkzypm3vjr45g?ref=cns_srchrow) AMI(s)
 
 1. On the **Choose Instance Type** page, keep the default selection of **G4dn Instance types** and choose **Next: Configure Instance Details**.
 
