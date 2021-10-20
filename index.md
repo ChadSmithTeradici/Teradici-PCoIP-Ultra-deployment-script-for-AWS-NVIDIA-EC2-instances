@@ -53,26 +53,13 @@ In this section, you create and configure a virtual workstation, including setti
 
 In this section, you procure a G4dn/G5dn type dedicated host in your region
 
-1. Select a AWS region that has [EC2 G4dn Instances available](https://www.instance-pricing.com/provider=aws-ec2/instance=g4dn.4xlarge/) with a understanding of hourly consumption rate.
+1. Select a AWS region that has [EC2 G4dn Instances available](https://www.instance-pricing.com/provider=aws-ec2/instance=g4dn.4xlarge/) with a understanding of hourly consumption rate. 
 
-1.  Allocate a Mac Dedicated Host within the [EC2 Dashboard](https://console.aws.amazon.com/ec2). Choose **Dedicated Hosts**, then choose **Allocate Dedicated Host**.
-    
-1.  On the **Allocate Dedicated Host** page, make the following selections:
-    + For **Name tag**, type EC2 Mac Dedicated Host
-    + For **Instance family**, choose **mac1**
-    + For **Support multiple instance** types, clear the **Enable** check box
-    + For **Instance type**, choose **mac1.metal**.
-    + For **Availability Zone**, choose any zone in your Region.
+1.  Launch a G4dn instance, On the [EC2 Dashboard](https://console.aws.amazon.com/ec2), choose **Launch Instance**.
 
-    Keep the remaining default selections and choose **Allocate**.
-    
-1. Once allocated, the Dedicated Host appears with a status of **Available**. 
+1. On the **Choose AMI** page, select the **[Windows 2019 Base(https://aws.amazon.com/marketplace/pp/prodview-bd6o47htpbnoe?ref=cns_srchrow)** or **[Cent0S7](https://aws.amazon.com/marketplace/pp/prodview-qkzypm3vjr45g?ref=cns_srchrow)** AMI(s)
 
-1.  Launch a mac1.metal instance, On the [EC2 Dashboard](https://console.aws.amazon.com/ec2), choose **Launch Instance**.
-
-1. On the **Choose AMI** page, select the **macOS Catalina (10.15.7)** or **macOS Big Sur (11.4)** AMI(s)
-
-1. On the **Choose Instance Type** page, keep the default selection of **mac1.metal instance** and choose **Next: Configure Instance Details**.
+1. On the **Choose Instance Type** page, keep the default selection of **G4dn Instance types** and choose **Next: Configure Instance Details**.
 
 1. On the **Configure Instance Details** page, for **Host**, choose the **Dedicated Host** you allocated earlier. For the remaining configuration details, make any selections you prefer. Then, choose **Next: Add Storage**.
 
