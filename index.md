@@ -53,7 +53,7 @@ In this section, you create and configure a virtual workstation, including setti
 
 In this section, you procure a G4dn/G5dn type dedicated host in your region
 
-1. Select a AWS region that has [EC2 G4dn Instances available](https://www.instance-pricing.com/provider=aws-ec2/instance=g4dn.4xlarge/) with a understanding of hourly consumption rate. 
+1. Select a AWS region that has [EC2 G4dn Instances available](https://www.instance-pricing.com/provider=aws-ec2/instance=g4dn.4xlarge/) with a understanding of minute/hourly consumption rate. 
 
 1.  Launch a G4dn instance, On the [EC2 Dashboard](https://console.aws.amazon.com/ec2), choose **Launch Instance**.
 
@@ -63,7 +63,9 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
 
     ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment_script-for-AWS-NVIDIA-Instances/blob/main/images/AWS-G4dn-Fam.jpg)
 
-1. On the **Configure Instance Details** page, for **Host**, choose the **Dedicated Host** you allocated earlier. For the remaining configuration details, make any selections you prefer. Then, choose **Next: Add Storage**.
+1. On the **Configure Instance Details** page, fill in **Networking/Subnet/Auto-Assign Public-IP** based on desired Network topology. Take remaining configuration details based until you reach the **User data** field 
+ 
+For the remaining configuration details, make any selections you prefer. Then, choose **Next: Add Storage**.
 
 1. On the **Add Storage** page, choose the Size (GiB) cell and increase the volume based on your requirements. Then, choose **Next: Add Tags**.
 
