@@ -49,11 +49,11 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 In this section, you create and configure a virtual workstation, including setting up networking and installing utilities. 
 
-### Procure the EC2 Mac Instance
+### Procure the EC2 Nvidia Instance
 
-In this section, you procure a mac1 type dedicated host in your region
+In this section, you procure a G4dn/G5dn type dedicated host in your region
 
-1. Select a AWS region that has [EC2 Mac Instances available](https://aws.amazon.com/ec2/instance-types/mac/) with a understanding of hourly consumption rate.
+1. Select a AWS region that has [EC2 G4dn Instances available](https://www.instance-pricing.com/provider=aws-ec2/instance=g4dn.4xlarge/) with a understanding of hourly consumption rate.
 
 1.  Allocate a Mac Dedicated Host within the [EC2 Dashboard](https://console.aws.amazon.com/ec2). Choose **Dedicated Hosts**, then choose **Allocate Dedicated Host**.
     
