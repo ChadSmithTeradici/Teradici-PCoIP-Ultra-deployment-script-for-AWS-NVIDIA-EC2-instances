@@ -19,7 +19,7 @@ More Information on EC2 Instance can be found [here](https://aws.amazon.com/ec2/
 ## Objectives
 
 + Allocate a AWS EC2 Nvidia powered Instance from AWS Console.
-+ Drop in deployment script based on Instance OS
++ Drop in deployment script based on Instance OS type
 + Configure Security Groups to allows access to instance (SSH,RDP & PCoIP ports).
 + Connect to EC2 Instance via PCoIP client
 
