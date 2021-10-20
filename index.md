@@ -67,7 +67,8 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
 
     ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment_script-for-AWS-NVIDIA-Instances/blob/main/images/User_Data_Field.jpg)
  
- 1. Based on your EC2 Instance desired OS, you will need either a Windows Powershell script (or) Centos Bash script. 
+ 1. Based on your EC2 Instance desired OS you will need either a Windows Powershell script (or) Centos Bash script. These scripts are maintained and updated quartly by Teradici and are avaible on the [Teradici GitHub repo](https://github.com/teradici)
+ 
  
 For the remaining configuration details, make any selections you prefer. Then, choose **Next: Add Storage**.
 
