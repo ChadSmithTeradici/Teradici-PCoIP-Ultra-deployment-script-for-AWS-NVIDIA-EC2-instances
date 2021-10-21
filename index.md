@@ -150,8 +150,8 @@ In this section, you will establish a connection to your instance using PCoIP. Y
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Trusted.jpg)
     
 1. Finally, enter in the OS login credentials: 
-    + For **Windows** it would be **Administrator** and the password defined in the deployment script (or) can be [retreived](https://aws.amazon.com/premiumsupport/knowledge-center/retrieve-windows-admin-password/) via EC2 console after provisioning.
-    + For **Centos** it would be the created user/password pair defined in the deployment script (or) a [SSH session](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) to a user created via *adduser* command after provisioning.
+    + For **Windows** it would be **Administrator** and the password can be [retreived](https://aws.amazon.com/premiumsupport/knowledge-center/retrieve-windows-admin-password/) via EC2 console after provisioning is complete
+    + For **Centos** Establish an [SSH session](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) to a create a user via *adduser* command after provisioning in complete
 
     ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Auth.jpg)
 
