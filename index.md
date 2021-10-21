@@ -65,7 +65,7 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
 
 1. On the **Configure Instance Details** page, at a minimum fill in **Networking/Subnet/Auto-Assign Public-IP** based on desired Network topology. Take remaining configuration details based your requirements, until you reach the **User data** field in the Advanced Details section.
 
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment_script-for-AWS-NVIDIA-Instances/blob/main/images/User_Data_Field.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment_script-for-AWS-NVIDIA-Instances/raw/main/images/User_Data_Field.jpg)
  
  1. Based on your EC2 Instance desired OS you will need either a Windows Powershell script (or) Centos Bash script. These scripts are maintained and updated quartly by Teradici and are avaible on the [Teradici GitHub repo](https://github.com/teradici)
  
@@ -73,7 +73,7 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
     
       You will need to enter your **Teradici registration code** into the script after it is pasted in the User data field. For Windows that field is on **line 11**. 
       
-        ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment-script-for-AWS-NVIDIA-EC2-instances/blob/main/images/Windows_UserDefine_Reg.jpg)
+        ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment-script-for-AWS-NVIDIA-EC2-instances/raw/main/images/Windows_UserDefine_Reg.jpg)
         
         Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
     
@@ -81,7 +81,7 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
     
       You will need to enter your **Teradici registration code** into the script after it is pasted in the User data field. For CentOS that field is on **line 31**.
       
-        ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment-script-for-AWS-NVIDIA-EC2-instances/blob/main/images/Centos_UserDefine_Reg.jpg)
+        ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment-script-for-AWS-NVIDIA-EC2-instances/raw/main/images/Centos_UserDefine_Reg.jpg)
 
       Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
  
@@ -139,21 +139,21 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
 1. From the client system, start your PCoIP client per OS. Typically the PCoIP client will have a icon:
 
-    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-icon.jpg)
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/raw/main/images/PCoIP-icon.jpg)
 
 1. When the PCoIP client starts, it will ask for a **Host Address or Code**. Enter in your **IP address or FQDN** previously identified in previous section. (optionally) enter a name to **Connection Name** field then **SAVE**, if you want to save connection.
 
-    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Client.jpg)
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/raw/main/images/PCoIP-Client.jpg)
     
 1. Next, you will get a 'Cannot verify your connection to IP' warning. This error is becuase a 3rd party trusted certificate has not been install on the host. You can select the **Connect Insecurely** option to continue.
     
-    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Trusted.jpg)
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/raw/main/images/PCoIP-Trusted.jpg)
     
 1. Finally, enter in the OS login credentials: 
     + For **Windows** it would be **Administrator** and the password can be [retreived](https://aws.amazon.com/premiumsupport/knowledge-center/retrieve-windows-admin-password/) via EC2 console after provisioning is complete
     + For **Centos** Establish an [SSH session](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) to a create a user via *adduser* command after provisioning in complete
 
-    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/blob/main/images/PCoIP-Auth.jpg)
+    ![image](https://github.com/ChadSmithTeradici/TeradiciPCoIPonMACinAWS/raw/main/images/PCoIP-Auth.jpg)
 
 ## Clean up
 
