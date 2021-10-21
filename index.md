@@ -51,7 +51,7 @@ In this section, you create and configure a virtual workstation, including setti
 
 ### Procure the EC2 Nvidia Instance
 
-In this section, you procure a G4dn/G5dn type dedicated host in your region
+In this section, you procure a On-Demand G4dn/G5dn instance type in your region.
 
 1. Select a AWS region that has [EC2 G4dn Instances available](https://www.instance-pricing.com/provider=aws-ec2/instance=g4dn.4xlarge/) with a understanding of minute/hourly consumption rate. 
 
