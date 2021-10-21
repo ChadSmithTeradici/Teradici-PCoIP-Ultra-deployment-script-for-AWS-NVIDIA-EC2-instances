@@ -1,6 +1,6 @@
 ---
 title: Install PCoIP Ultra via a script in AWS
-description: Steps to utilize a deployment script for Teradici PCoIP on AWS/Nvidia instances (G3, G4dn, G5dn). This is outside of an AWS marketplace offering.
+description: Learn how to deploy PCoIP Ultra on AWS EC2 Nvidia powered instances with a Teradici subscription plan.
 author: chad-m-smith
 tags: Teradici, AWS, Nvidia, EC2
 date_published: 2021-10-20
